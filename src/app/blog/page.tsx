@@ -3,6 +3,7 @@ import { Metadata } from 'next'
 import process from 'process'
 
 import { PostItem } from '@/app/blog/_components/post-item'
+import { PostItemSkeleton } from '@/app/blog/_components/post-item.skeleton'
 
 interface PostsProps {
 	searchParams: {
