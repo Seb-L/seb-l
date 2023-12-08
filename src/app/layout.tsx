@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import dayjs from 'dayjs'
 import localizedFormat from 'dayjs/plugin/localizedFormat'
 import type { Metadata } from 'next'
@@ -59,6 +60,8 @@ export default function RootLayout ({ children }: PropsWithChildren) {
 				</main>
 
 				<SiteFooter/>
+
+				<Analytics/>
 			</body>
 		</html>
 	)

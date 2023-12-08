@@ -9,6 +9,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@vercel/analytics": "^1.1.1",
 		"contentlayer": "^0.3.4",
 		"critters": "^0.0.20",
 		"dayjs": "^1.11.10",
