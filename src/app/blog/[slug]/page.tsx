@@ -3,6 +3,7 @@ import dayjs from 'dayjs'
 import { Metadata } from 'next'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
+import process from 'process'
 import Balancer from 'react-wrap-balancer'
 
 import { Mdx } from '@/app/_components/mdx'
@@ -47,6 +48,7 @@ export const generateMetadata = async ({ params }: { params: { slug: string } })
 		description,
 		openGraph,
 		twitter,
+		alternates: { canonical: `${process.env.NEXT_PUBLIC_SITE_DOMAIN_URL as string}/${slug}` },
 	}
 }
 

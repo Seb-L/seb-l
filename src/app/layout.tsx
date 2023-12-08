@@ -3,6 +3,7 @@ import localizedFormat from 'dayjs/plugin/localizedFormat'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
+import * as process from 'process'
 import { PropsWithChildren } from 'react'
 
 import { Navbar } from '@/app/_components/navbar'
@@ -17,6 +18,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
 	title: 'Seb. L.',
 	description: 'Web developer & film photography enthusiast.',
+	alternates: { canonical: process.env.NEXT_PUBLIC_SITE_DOMAIN_URL as string },
 }
 
 export default function RootLayout ({ children }: PropsWithChildren) {

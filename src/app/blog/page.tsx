@@ -1,5 +1,6 @@
 import { allPosts } from 'contentlayer/generated'
 import { Metadata } from 'next'
+import process from 'process'
 
 import { PostItem } from '@/app/blog/_components/post-item'
 
@@ -12,6 +13,7 @@ interface PostsProps {
 export const metadata: Metadata = {
 	title: 'Blog - Seb. L.',
 	description: 'Web developer & film photography enthusiast.',
+	alternates: { canonical: `${process.env.NEXT_PUBLIC_SITE_DOMAIN_URL as string}/blog` },
 }
 
 export default function Posts ({ searchParams }: PostsProps) {
