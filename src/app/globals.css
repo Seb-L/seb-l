@@ -2,26 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+	scroll-padding-top: 80px;
+	scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+[data-rehype-pretty-code-fragment] {
+	@apply rounded-lg overflow-hidden mb-8;
+	border-radius: 0.5rem !important;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+[data-rehype-pretty-code-title] {
+	@apply text-white bg-gray-700 text-sm py-1 px-4;
+}
+
+pre {
+	@apply text-sm;
+	margin: 0 !important;
+}
+
+.prose p code {
+	@apply p-1 rounded bg-gray-600 text-white font-extralight text-xs;
+}
+
+.prose .anchor {
+	@apply absolute invisible no-underline;
+
+	margin-left: -1em;
+	padding-right: 0.5em;
+	width: 80%;
+	max-width: 700px;
+	cursor: pointer;
+}
+
+.anchor:hover {
+	@apply visible;
+}
+
+.prose a {
+	@apply transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
+}
+
+.prose .anchor:after {
+	@apply text-neutral-300 dark:text-neutral-700;
+	content: '#';
+}
+
+.prose *:hover > .anchor {
+	@apply visible;
 }

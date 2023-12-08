@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Hi there 👋
 
-## Getting Started
+I'm Seb, and I work as a Head of Engineering front-end at Cocoon Space since 2022, in Paris, France.
+I'm into film photography, vinyl records, veggie food, tattoos and cats.
 
-First, run the development server:
+<!--
+- 🔭 I’m currently working on ...
+- 🌱 I’m currently learning ...
+- 👯 I’m looking to collaborate on ...
+- 🤔 I’m looking for help with ...
+- 💬 Ask me about ...
+- ⚡ Fun fact: ...
+-->
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 📫 How to reach me:
+	- [LinkedIn](https://www.linkedin.com/in/sebastienlombard)
+	- [Medium](https://medium.com/@Seb_L)
+	- [Instagram](https://www.instagram.com/seb.l.photo)
+- 🙎‍♂️ Pronouns: he/him/his
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Frameworks
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- NextJs (React + TypeScript)
+- NestJs (NodeJs + TypeScript)
 
-## Learn More
+### UI
 
-To learn more about Next.js, take a look at the following resources:
+- TailwindCss
+- Radix primitives
+- Mui-x
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Testing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- vitest
+- playwright
+- mswjs
 
-## Deploy on Vercel
+### Misc
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Storybook
+- ReactQuery
+- React hook form
+- Zod
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Experiences
+
+- 2022/----: Head of Engineering front-end / mobile @ Cocoon Space
+- 2019/2022: Lead front-end developer @ ABBD
+- 2018/2019: Lead front / Team Lead @ Agorize
+- 2015/2018: Front-end developer / Lead front-end developer @ Numberly
+- 2014/2015: Front-end developer @ Wakanda(4D)
+- 2009/2014: Graphic Designer @ LPG Systems

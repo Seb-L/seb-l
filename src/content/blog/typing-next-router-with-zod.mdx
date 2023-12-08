@@ -1,0 +1,52 @@
+---
+title: "Quick tip: Typing NextJs router query params with Zod coerce"
+publishedAt: 2022-12-14
+summary: Strongly type and coerce your router query params data with Zod Coercion for primitives.
+tags:
+  - zod
+  - typescript
+---
+
+Strongly type and coerce your router query params data with Zod [Coercion for primitives](https://zod.dev/?id=coercion-for-primitives).
+
+## Create a hook to extend useRouter
+
+Here we are getting a Zod schema as an argument to parse (z.parse) and type (z.infer) our query params.
+
+```ts
+import { useRouter } from 'next/router'
+import { z } from 'zod'
+
+export const useTypedRouter = <T extends z.Schema>(schema: T) => {
+	const { query, ...router } = useRouter()
+
+	return {
+		query: schema.parse(query) as z.infer<typeof schema>,
+		...router
+	}
+}
+```
+
+## Usage
+
+The routerSchema uses the coerce feature from Zod to transform the type of our query string, here boolean and number.
+
+```tsx
+const routerSchema = z.object({
+	someText: z.coerce.string().optional().default('some-default-text'),
+	someNumber: z.coerce.number().optional(),
+	someBool: z.coerce.boolean().optional()
+})
+
+export default () => {
+	const { query } = useTypedRouter(routerSchema)
+
+	return (
+		<div>
+			...
+		</div>
+	)
+}
+```
+
+For a URL like `/?someNumber=4`, `query.someNumber` is now a number instead of a `string | string[]`.
