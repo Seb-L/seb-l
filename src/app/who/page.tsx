@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { H1 } from '@/app/_components/mdx/h1'
 
 const introBody = [
-	'I\'m Seb and I am currently <strong>Head of Engineering front-end and mobile</strong> at <a href="https://www.cocoon-space.com/" target="_blank" rel="noreferrer">Cocoon Space</a> since 2022 in Paris, France.',
+	'I\'m Seb, and I am currently <strong>Head of Product / Engineering (front-end & mobile)</strong> at <a href="https://www.cocoon-space.com/" target="_blank" rel="noreferrer">Cocoon Space</a> since 2022 in Paris, France.',
 	'I\'m into <a href="https://www.instagram.com/seb.l.photo/" target="_blank">film photography</a>, vinyl records, veggie food, tattoos and cats.',
 	'I was making <a href="https://open.spotify.com/artist/65sE0Yi64jgnzLTUZRbrxv?si=-VXNpHFDTX2LnCr2duRTYg">post-rock music</a> between 2006 and 2009.',
 ]
@@ -20,7 +20,7 @@ const stack = [
 const exp = [
 	{
 		date: '2022/----',
-		title: 'Head of Engineering front-end / mobile',
+		title: 'Head of Product / Engineering (front-end/mobile)',
 		company: 'Cocoon Space',
 	},
 	{ date: '2019/2022', title: 'Lead front-end developer', company: 'ABBD' },
@@ -42,13 +42,13 @@ const exp = [
 export default function Posts () {
 	return (
 		<div className={'py-12'}>
-			<section className='mb-8 md:grid md:grid-cols-3 md:items-center md:gap-8'>
+			<section className='mb-8 flex flex-row md:items-center md:gap-8'>
 				<div className='hidden shrink-0 md:block'>
 					<Image
 						src='/images/seb-l.jpg'
 						alt={''}
-						width={195}
-						height={195}
+						width={180}
+						height={180}
 						className='m-0 block rounded-lg'
 					/>
 				</div>
