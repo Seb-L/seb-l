@@ -1,6 +1,6 @@
 # Hi there 👋
 
-I'm Seb, and I work as a Head of Engineering front-end at Cocoon Space since 2022, in Paris, France.
+I'm Seb, CTO in Paris, France.
 I'm into film photography, vinyl records, veggie food, tattoos and cats.
 
 <!--
@@ -23,13 +23,12 @@ I'm into film photography, vinyl records, veggie food, tattoos and cats.
 ### Frameworks
 
 - NextJs (React + TypeScript)
-- NestJs (NodeJs + TypeScript)
+- Hono (NodeJs + TypeScript)
 
 ### UI
 
 - TailwindCss
-- Radix primitives
-- Mui-x
+- Shadcn/ui
 
 ### Testing
 
@@ -46,7 +45,8 @@ I'm into film photography, vinyl records, veggie food, tattoos and cats.
 
 ## Experiences
 
-- 2022/----: Head of Engineering front-end / mobile @ Cocoon Space
+- 2024/----: CTO @ Cocoon Space
+- 2022/2024: Head of Engineering @ Cocoon Space
 - 2019/2022: Lead front-end developer @ ABBD
 - 2018/2019: Lead front / Team Lead @ Agorize
 - 2015/2018: Front-end developer / Lead front-end developer @ Numberly
